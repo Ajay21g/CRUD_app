@@ -1,0 +1,28 @@
+<% layout("layouts/boilerplate.ejs") %>
+<body>
+    <div class="row">
+        <div class="col-8 offset-2">
+            <br><br>
+    <h3>Add New Movie</h3>
+    <form method="POST" action="/listings">
+        <div class="mb-3">
+            <label for="title" class="form-label">Title</label>
+            <input name="listing[name]" placeholder="name" type="text" class="form-control">
+        </div>
+ 
+        <div class="mb-3">
+            <label for="img" class="form-label">Image-link</label>
+            <input name="listing[img]" placeholder="Enter img/url link" type="text" class="form-control">
+        </div>
+
+        <div class="mb-3">
+            <label for="summary" class="form-label">Summary</label>
+            <textarea name="listing[summary]"  type="text" class="form-control"></textarea>
+        </div>
+        <br>
+        <button class="btn btn-dark add-btn">Add</button>
+        <br><br>
+    </form>
+</div>
+</div>
+</body>
